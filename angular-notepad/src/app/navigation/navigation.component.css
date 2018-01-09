@@ -1,0 +1,21 @@
+#navigation{
+    padding-top: 20px;
+}
+#navigation .nav-item-holder{
+    font-size: 2em;
+    background-color: #F7BA5B;
+    color: #fff;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.nav-item-holder span.glyphicon{
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    top: 34%;
+    left: 32%;
+    position: absolute;
+}
