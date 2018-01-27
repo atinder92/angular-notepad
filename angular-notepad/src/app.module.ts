@@ -11,6 +11,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { CreateNoteComponent } from './app/create-note/create-note.component';
 import { TrashComponent } from './app/trash/trash.component';
 import { SavedNotesComponent } from './app/saved-notes/saved-notes.component';
+import { PageNotFoundComponent } from './app/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SavedNotesComponent } from './app/saved-notes/saved-notes.component';
     NavigationComponent,
     CreateNoteComponent,
     TrashComponent,
-    SavedNotesComponent
+    SavedNotesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
