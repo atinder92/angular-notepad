@@ -12,6 +12,8 @@ import { CreateNoteComponent } from './app/create-note/create-note.component';
 import { TrashComponent } from './app/trash/trash.component';
 import { SavedNotesComponent } from './app/saved-notes/saved-notes.component';
 import { PageNotFoundComponent } from './app/page-not-found/page-not-found.component';
+import { SigninFormComponent } from './app/signin-form/signin-form.component';
+import { SignupFormComponent } from './app/signup-form/signup-form.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { PageNotFoundComponent } from './app/page-not-found/page-not-found.compo
     CreateNoteComponent,
     TrashComponent,
     SavedNotesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SigninFormComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,
