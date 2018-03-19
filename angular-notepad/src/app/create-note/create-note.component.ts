@@ -8,10 +8,16 @@ import { NoteAppService } from "../../services/note-app.service";
 })
 export class CreateNoteComponent implements OnInit {
 
+  private noteString:string;
   constructor(private noteAppService:NoteAppService) { }
 
   ngOnInit() {
     this.noteAppService.greet();
   }
 
+  saveNote(){
+    var currentDate = new Date();
+    this.noteAppService.addNote(this.noteString,currentDate);
+    this.noteAppService.logNotes();
+  }
 }

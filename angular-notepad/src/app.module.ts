@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 
 //Components
 import { AppComponent } from './app/app.component';
@@ -33,7 +34,8 @@ import { NoteAppService } from "./services/note-app.service";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [NoteAppService],
   bootstrap: [AppComponent]
