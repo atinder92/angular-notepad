@@ -2,3 +2,6 @@
     width:500px;
     border:#e6e6e6 solid thin;
 }
+textarea.ng-invalid.ng-touched  {
+    border: 2px solid #a94442; 
+  }
