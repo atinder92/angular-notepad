@@ -8,9 +8,12 @@ export class NoteAppService{
         this.notes.push(new Note(noteString,createdDate));
     }
 
+    getNotes():Note[] {
+        return this.notes;
+    }
     logNotes():void{
         console.log(this.notes);
     }
-    
+
 
 }
