@@ -1,16 +1,19 @@
 <h3>Write a Quick Note</h3>
-<form>
+<form #noteForm="ngForm">
 <textarea 
     rows="10" 
     class="note-input" 
-    [(ngModel)]="noteString" 
-    id="noteString" 
-    name="noteString" 
+    [(ngModel)]="noteInput" 
+    id="noteInput" 
+    name="noteInput" 
     required 
-    #noteStringRef="ngModel"
+    #noteInputRef="ngModel"
 >
 </textarea>
 <br>
-<button class="btn btn-default btn-ms" [disabled]="!noteStringRef.valid" (click)="saveNote()" >Save Note</button>
-<button class="btn btn-default btn-ms" [disabled]="!noteStringRef.valid" >New  Note</button>
+<button class="btn btn-default btn-ms" [disabled]="!noteInputRef.valid" (click)="saveNote()" >Save Note</button>
+<button class="btn btn-default btn-ms" [disabled]="!noteInputRef.valid" (click)="newNote(noteForm)">New  Note</button>
 </form>
+<div class="alert alert-success note-success-msg" *ngIf="noteCreatedSuccess">
+    <span class="glyphicon glyphicon-ok-circle"></span> Note created successfully    
+</div>
