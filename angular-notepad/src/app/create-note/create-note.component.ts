@@ -12,7 +12,7 @@ export class CreateNoteComponent implements OnInit {
   constructor(private noteAppService:NoteAppService) { }
 
   ngOnInit() {
-    this.noteAppService.greet();
+
   }
 
   saveNote(){

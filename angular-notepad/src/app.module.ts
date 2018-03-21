@@ -18,6 +18,7 @@ import { SignupFormComponent } from './app/signup-form/signup-form.component';
 //services
 
 import { NoteAppService } from "./services/note-app.service";
+import { NoteViewComponent } from './app/note-view/note-view.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NoteAppService } from "./services/note-app.service";
     SavedNotesComponent,
     PageNotFoundComponent,
     SigninFormComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    NoteViewComponent
   ],
   imports: [
     BrowserModule,
