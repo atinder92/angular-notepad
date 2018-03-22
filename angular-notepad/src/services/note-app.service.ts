@@ -5,7 +5,10 @@ export class NoteAppService{
     private notes:Note[] = [];
 
     addNote(noteString:string,createdDate:Date):void{
-        this.notes.push(new Note(noteString,createdDate));
+        //create id from length of array
+        var id = this.notes.length;
+        id++;
+        this.notes.push(new Note(id,noteString,createdDate));
     }
 
     getNotes():Note[] {
