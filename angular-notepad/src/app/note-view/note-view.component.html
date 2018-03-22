@@ -1,1 +1,5 @@
-<div class="noteView">{{note.noteString}}</div>
+<div class="noteView">
+    <p class="noteContent">{{note.noteString}}</p>
+    <p class="noteDate"><span class="glyphicon glyphicon-time"></span> {{note.createdDate | date:'short'}}</p>
+    <div class="noteOptions"></div>
+</div>
