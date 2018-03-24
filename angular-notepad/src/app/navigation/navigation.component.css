@@ -11,7 +11,7 @@
     margin-bottom: 10px;
     position: relative;
 }
-.nav-item-holder span.glyphicon{
+.nav-item-holder i.fa{
     margin:0 auto;
     display: block;
     text-align: center;
