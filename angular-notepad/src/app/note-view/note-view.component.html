@@ -3,8 +3,15 @@
     <p class="noteDate"><span class="glyphicon glyphicon-time"></span> {{note.createdDate | date:'short'}}</p>
     <div class="noteOptions">
             <div class="btn-group" role="group" aria-label="...">
-                <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-edit"></span></button>
-                <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-edit"></span> Edit</button>
+                <button 
+                    class="btn btn-xs btn-default"
+                    placement="top"
+                    type="button"
+                    [ngbPopover]="'Vivamus sagittis lacus vel augue laoreet rutrum faucibus.'"
+                    popoverTitle="Delete Note ?">
+                    <span class="glyphicon glyphicon-trash"></span> Delete
+                </button>
             </div>
     </div>
 </div>

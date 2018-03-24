@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 //Components
 import { AppComponent } from './app/app.component';
@@ -37,7 +38,8 @@ import { NoteViewComponent } from './app/note-view/note-view.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [NoteAppService],
   bootstrap: [AppComponent]
