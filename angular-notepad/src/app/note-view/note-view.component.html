@@ -1,17 +1,18 @@
 <div class="noteView">
     <p class="noteContent">{{note.noteString}}</p>
-    <p class="noteDate"><span class="glyphicon glyphicon-time"></span> {{note.createdDate | date:'short'}}</p>
+    <p class="noteDate"><i class="fa fa-history"></i> {{note.createdDate | date:'short'}}</p>
     <div class="noteOptions">
-            <div class="btn-group" role="group" aria-label="...">
-                <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-edit"></span> Edit</button>
+          
+                <button class="btn btn-sm btn-dark"><i class="fa fa-edit"></i> Edit</button>
                 <button 
-                    class="btn btn-xs btn-default"
-                    placement="top"
+                    class="btn btn-sm btn-dark"
+                    placement="right"
                     type="button"
-                    [ngbPopover]="'Vivamus sagittis lacus vel augue laoreet rutrum faucibus.'"
+                    [ngbPopover]="dltTemplate"
                     popoverTitle="Delete Note ?">
-                    <span class="glyphicon glyphicon-trash"></span> Delete
+                    <i class="fa fa-edit"></i> Delete
                 </button>
-            </div>
+                <ng-template #dltTemplate>Are you sure ? You want to delete note </ng-template>
+            
     </div>
 </div>

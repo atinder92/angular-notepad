@@ -11,9 +11,9 @@
 >
 </textarea>
 <br>
-<button type="button" class="btn btn-light btn-ms" [disabled]="!noteInputRef.valid" (click)="saveNote()" >Save Note</button>
-<button type="button" class="btn btn-light btn-ms" [disabled]="!noteInputRef.valid" (click)="newNote(noteForm)">New  Note</button>
+<button type="button" class="btn btn-secondary btn-sm" [disabled]="!noteInputRef.valid" (click)="saveNote()" >Save Note</button>
+<button type="button" class="btn btn-secondary btn-sm" [disabled]="!noteInputRef.valid" (click)="newNote(noteForm)">New  Note</button>
 </form>
 <div class="alert alert-success note-success-msg" *ngIf="noteCreatedSuccess">
-    <span class="glyphicon glyphicon-ok-circle"></span> Note created successfully    
+    <i class="fa fa-check-circle"></i> Note created successfully    
 </div>
