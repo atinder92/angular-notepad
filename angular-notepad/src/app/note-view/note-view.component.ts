@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Note } from '../../model/note.model';
 import { DatePipe } from '@angular/common';
+import { NoteAppService } from '../../services/note-app.service';
 
 @Component({
   selector: 'app-note-view',
@@ -10,9 +11,12 @@ import { DatePipe } from '@angular/common';
 export class NoteViewComponent implements OnInit {
 
   @Input() note:Note;
-  constructor() { }
+  constructor(private noteAppService:NoteAppService) { }
 
   ngOnInit() {
   }
 
+  deleteNote(id:number):void{
+      this.noteAppService.deleteNote(id);
+  }
 }
