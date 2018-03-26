@@ -12,7 +12,10 @@
                     popoverTitle="Delete Note ?">
                     <i class="fa fa-edit"></i> Delete
                 </button>
-                <ng-template #dltTemplate>Are you sure ? You want to delete note </ng-template>
+                <ng-template #dltTemplate class="templateMenu">
+                    <button class="btn btn-sm btn-danger" (click)="deleteNote(note.id)">Yes</button>
+                    <button class="btn btn-sm btn-dark">No</button> 
+                </ng-template>
             
     </div>
 </div>
