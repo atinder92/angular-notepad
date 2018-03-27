@@ -17,6 +17,8 @@ export class NoteViewComponent implements OnInit {
   }
 
   deleteNote(id:number):void{
+    
       this.noteAppService.deleteNote(id);
+      this.noteAppService.getNotes();
   }
 }

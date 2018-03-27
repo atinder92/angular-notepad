@@ -10,10 +10,13 @@ import { Note } from '../../model/note.model';
 export class SavedNotesComponent implements OnInit {
 
   notes: Note[];
-  constructor(private noteAppService:NoteAppService) { }
+  constructor(private noteAppService:NoteAppService) {  
+    this.noteAppService.getNotesObservable().subscribe((notes) => {
+    this.notes = notes;
+  });}
 
   ngOnInit() {
-    this.notes = this.noteAppService.getNotes();
+    this.noteAppService.getNotes();
   }
 
 }
